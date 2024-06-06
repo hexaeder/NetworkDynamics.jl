@@ -32,6 +32,7 @@ function (nw::Network)(du, u::T, p, t) where {T}
 
         @timeit_debug "process vertices" process_vertices!(ex, nw, aggbuf, dupt)
     end
+    du[1] = du[2] # intruduce error
     return nothing
 end
 
