@@ -17,6 +17,9 @@ using DocStringExtensions
 using StyledStrings: StyledStrings, @styled_str
 using Adapt: Adapt, adapt
 
+using Base: @propagate_inbounds
+using InteractiveUtils: subtypes
+
 import SymbolicIndexingInterface as SII
 import StaticArrays
 
